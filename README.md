@@ -2,7 +2,7 @@
 
 ## Demo Page
 
-You can find a demo page here: http://neoblack.github.io/Bootstrap-Kickstarter/
+You can find a demo page here: https://neoblack.github.io/bootstrap/
 
 ## How to use it?
 
