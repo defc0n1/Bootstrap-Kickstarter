@@ -1,5 +1,9 @@
 # Bootstrap-Kickstarter
 
+## Demo Page
+
+You can find a demo page here: http://neoblack.github.io/Bootstrap-Kickstarter/
+
 ## How to use it?
 
 1. Clone this repository: `clone git@github.com:NeoBlack/Bootstrap-Kickstarter.git`
