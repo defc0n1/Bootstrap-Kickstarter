@@ -24,7 +24,7 @@
 			<nav class="navbar navbar-default">
 				<div class="container">
 					<ul class="nav navbar-nav">
-						<li role="presentation"><a href="#text-styles">Text-Styles</a></li>
+						<li role="presentation"><a href="#text-styles">Text</a></li>
 						<li role="presentation"><a href="#lists">Listen</a></li>
 						<li role="presentation"><a href="#images">Images</a></li>
 						<li role="presentation"><a href="#media">Media</a></li>
@@ -37,6 +37,7 @@
 						<li role="presentation"><a href="#tabs">Tabs</a></li>
 						<li role="presentation"><a href="#collapsible">Collapsible</a></li>
 						<li role="presentation"><a href="#panels">Panels</a></li>
+						<li role="presentation"><a href="#forms">Forms</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -1238,7 +1239,7 @@
 		</div>
 	</div>
 
-	<!-- COLLAPSIBLE-STYLES -->
+	<!-- PANELS-STYLES -->
 	<div id="panels">
 		<div class="row">
 			<div class="col-md-12">
@@ -1321,6 +1322,205 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- FORMS-STYLES -->
+	<div id="forms">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Forms</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Basic example</h3>
+				<form>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Password</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputFile">File input</label>
+						<input type="file" id="exampleInputFile">
+						<p class="help-block">Example block-level help text here.</p>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> Check me out
+						</label>
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<h3>Inline form</h3>
+				<form class="form-inline">
+					<div class="form-group">
+						<label for="exampleInputName2">Name</label>
+						<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail2">Email</label>
+						<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+					</div>
+					<button type="submit" class="btn btn-default">Send invitation</button>
+				</form>
+
+				<h3>Horizontal form</h3>
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+						<div class="col-sm-10">
+							<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Remember me
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit" class="btn btn-default">Sign in</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Supported controls</h3>
+			</div>
+			<div class="col-md-6">
+				<h4>Inputs</h4>
+				<p>Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.</p>
+				<form>
+					<input type="text" class="form-control" placeholder="Text input">
+				</form>
+
+				<h4>Textarea</h4>
+				<p>Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary.</p>
+				<form>
+					<textarea class="form-control" rows="3"></textarea>
+				</form>
+
+				<h4>Selects</h4>
+				<p>Note that many native select menus—namely in Safari and Chrome—have rounded corners that cannot be modified via <code>border-radius</code> properties.</p>
+				<form>
+					<select class="form-control">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</form>
+
+				<p>For <code>&lt;select&gt;</code> controls with the <code>multiple</code> attribute, multiple options are shown by default.</p>
+				<form>
+					<select multiple class="form-control">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</form>
+
+
+			</div>
+			<div class="col-md-6">
+
+				<h4>Checkboxes and radios</h4>
+				<p>Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</p>
+				<p>Disabled checkboxes and radios are supported, but to provide a "not-allowed" cursor on hover of the parent <code>&lt;label&gt;</code>, you'll need to add the <code>.disabled</code> class to the parent <code>.radio</code>, <code>.radio-inline</code>, <code>.checkbox</code>, or <code>.checkbox-inline</code>.</p>
+				<form>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="">
+							Option one is this and that&mdash;be sure to include why it's great
+						</label>
+					</div>
+					<div class="checkbox disabled">
+						<label>
+							<input type="checkbox" value="" disabled>
+							Option two is disabled
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+							Option one is this and that&mdash;be sure to include why it's great
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+							Option two can be something else and selecting it will deselect option one
+						</label>
+					</div>
+					<div class="radio disabled">
+						<label>
+							<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+							Option three is disabled
+						</label>
+					</div>
+				</form>
+
+				<h4>Inline checkboxes and radios</h4>
+				<p>Use the <code>.checkbox-inline</code> or <code>.radio-inline</code> classes on a series of checkboxes or radios for controls that appear on the same line.</p>
+				<form>
+					<label class="checkbox-inline">
+						<input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+					</label>
+					<label class="checkbox-inline">
+						<input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+					</label>
+					<label class="checkbox-inline">
+						<input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+					</label>
+				</form>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<a href="#top" class="pull-right">
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-chevron-up fa-stack-1x fa-inverse"></i>
+					</span>
+				</a>
+				<div class="divider"></div>
+			</div>
+		</div>
+	</div>
+
 </div>
 <script src="JavaScript/frontend.js"></script>
 </body>
