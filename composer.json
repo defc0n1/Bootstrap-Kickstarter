@@ -1,0 +1,17 @@
+{
+  "name": "neoblack/boostrap-kickstarter",
+  "description": "bootstrap kickstarter for HTML dummy",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "require": {
+    "twbs/bootstrap": "3.3.5",
+    "fortawesome/font-awesome": "4.4.0",
+    "components/jquery": "1.11.3"
+  },
+  "authors": [
+    {
+      "name": "Frank Nägler",
+      "email": "frank.naegler@iosoft-websolutions.de"
+    }
+  ]
+}

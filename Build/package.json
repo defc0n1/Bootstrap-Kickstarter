@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-less": "*",
+    "gulp-minify-css": "*",
+    "gulp-watch": "*",
+    "gulp-concat": "*",
+    "gulp-uglify": "*",
+    "del": "^1.1.1"
+  }
+}
