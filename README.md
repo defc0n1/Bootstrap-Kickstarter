@@ -6,7 +6,7 @@ You can find a demo page here: https://neoblack.github.io/bootstrap/
 
 ## How to use it?
 
-1. Clone this repository: `clone git@github.com:NeoBlack/Bootstrap-Kickstarter.git`
+1. Clone this repository: `git clone git@github.com:NeoBlack/Bootstrap-Kickstarter.git`
 
 2. Use composer to install dependencies `composer install`
 
